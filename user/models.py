@@ -9,6 +9,9 @@ class User(models.Model):
     fullname = models.CharField("이름", max_length=20)
     join_date = models.DateTimeField("가입일", auto_now_add=True)
 
+    def __str__(self):
+        return f"{self.username}/{self.email}"
+
 
 class UserProfile(models.Model):
     user = models.OneToOneField(to=User, verbose_name="사용자", on_delete=models.CASCADE, primary_key=True)
@@ -17,6 +20,12 @@ class UserProfile(models.Model):
     birthday = models.DateField("생일")
     age = models.IntegerField("나이")
 
+    def __str__(self):
+        return f"{self.user.fullname} 님의 프로필 입니다."
+
 
 class Hobby(models.Model):
     name = models.CharField("취미", max_length=50)
+
+    def __str__(self):
+        return self.name
