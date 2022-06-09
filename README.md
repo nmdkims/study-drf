@@ -6,7 +6,7 @@
 
 과제 2 : CBV를 사용해 views.py 구성해보기
 
-과제 3 : custom user psermission을 활용해 내가 원하는 대로 권한 바꿔보기
+과제 3 : custom user permission을 활용해 내가 원하는 대로 권한 바꿔보기
 
 # 6/7 첫번째 과제 설명
 새롭게 만든 앱 : message
