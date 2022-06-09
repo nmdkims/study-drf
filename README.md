@@ -1,4 +1,16 @@
-# 9/7 첫번째 과제 설명
+# 6/8 두번째 과제 설명
+새롭게 만든 앱 : **Work in progress**
+
+과제 1 : one to one, many to many 등 다양한 속성을 가진 필드를 사용해 모델링 해보기
+- 강의에서 보여드린 user / userprofile / hobby의 관계가 아닌, 어디에 어떤 관계를 사용할 수 있을지 고민해보고 만들어 보면 좋을 것 같습니다!!
+
+과제 2 : CBV를 사용해 views.py 구성해보기
+
+과제 3 : custom user psermission을 활용해 내가 원하는 대로 권한 바꿔보기
+
+# 6/7 첫번째 과제 설명
+새롭게 만든 앱 : message
+
 과제 1 : mutable과 immutable한 자료형에 대하여 학습하기
 - https://dawnpast12.tistory.com/entry/3%EB%B6%84-CS%EC%A7%80%EC%8B%9D-Immutable%EA%B3%BC-Mutable
 
