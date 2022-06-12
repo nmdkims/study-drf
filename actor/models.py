@@ -5,7 +5,7 @@ from user.models import User
 class Actor(models.Model):
     actorname = models.CharField("성우이름", max_length=20, unique=True)
     writer = models.CharField("제작자", max_length=20)
-    category = models.ManyToManyField(to="Category", verbose_name="카테고리", default= "카테고리 없음")
+    category = models.ForeignKey(to="Category",on_delete=models.SET_NULL,null=True, verbose_name="카테고리", default= "카테고리 없음")
     voice = models.ImageField(upload_to="%Y/%m/%d")
 
     def __str__(self):

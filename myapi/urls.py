@@ -20,5 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('message/', include('message.urls')),
     path('h2/', include('actor.urls')),
-    path('h2/', include(('user.urls')))
+    path('h3/', include('user.urls')),
+    path('h3/', include('blog.urls'))
 ]
