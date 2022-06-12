@@ -1,4 +1,8 @@
 # 6/10 세번째 과제 설명 - WIP
+새롭게 만든 앱 : blog, user(수정)
+
+새롭게 추가된 API : /h3/user , /h3/blog
+
 1. Django 프로젝트를 생성하고, user 라는 앱을 만들어서 settings.py 에 등록해보세요.
 <img width="675" alt="image" src="https://user-images.githubusercontent.com/89897944/173239228-4fd104f7-c372-43c4-a5a9-3a1ac77e58df.png">
 
