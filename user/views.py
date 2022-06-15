@@ -3,7 +3,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import permissions, status
 from .serializers import UserSerializer
-from blog.models import Article
+from blog.models import Article, Comment
 from .models import Hobby
 
 # Create your views here.
@@ -16,16 +16,16 @@ class MyAwesomePermission(permissions.BasePermission):
 
 
 class UserApiView(APIView):
-    permission_classes = [permissions.AllowAny]  # 누구나 view 조회 가능
+    # permission_classes = [permissions.AllowAny]  # 누구나 view 조회 가능
     # permission_classes = [permissions.IsAdminUser] # admin만 view 조회 가능
-    # permission_classes = [permissions.IsAuthenticated] # 로그인 된 사용자만 view 조회 가능
+    permission_classes = [permissions.IsAuthenticated] # 로그인 된 사용자만 view 조회 가능
     # permission_classes = [MyAwesomePermission]
     serializer_class = UserSerializer
 
 
     def get(self, request):
-        queryset = list(Article.objects.filter(writer=self.request.user).values())
-        # user = request.user
+        # queryset = list(Article.objects.filter(writer=self.request.user).values())
+        user = request.user
         # queryset.append(user)
         # try:
         #     hobby = Hobby.objects.get(username=user)
@@ -33,7 +33,7 @@ class UserApiView(APIView):
         #
         #     return Response({'error': '오브젝트가 존재하지 않습니다.'}, status=status.HTTP_400_BAD_REQUEST)
 
-        return Response(queryset)
+        return Response(UserSerializer(user).data, status = status.HTTP_200_OK)
 
         # 로그인
     def post(self, request):
