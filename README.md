@@ -1,3 +1,12 @@
+# 6/15 다섯번째 과제 설명 - WIP
+1. product라는 앱을 새로 생성해주세요
+2. product 앱에서 <제목, 썸네일, 설명, 등록일자, 노출 시작 일, 노출 종료일, 활성화 여부>가 포함된 event 테이블을 생성해주세요
+3. django serializer에서 기본적으로 제공하는 validate / create / update 기능을 사용해 event 테이블의 생성/수정 기능을 구현해주세요
+    1. 전달 받은 데이터는 **kwargs를 사용해 입력해주세요
+    2. postman으로 파일을 업로드 할 때는 raw 대신 form-data를 사용하고, Key type을 File로 설정해주세요
+4. 등록된 이벤트 중 현재 시간이 노출 시작 일과 노출 종료 일의 사이에 있고, 활성화 여부가 True인 event 쿼리셋을 직렬화 해서 리턴해주는 serializer를 만들어주세요
+
+
 # 역참조 - ( 6/13일 3번 문제 )
 ![image](https://user-images.githubusercontent.com/89897944/174224560-d941f9c3-115c-4250-97f3-df7177641194.png)
 ** 역참조를 할때 변수 이름 밑에는 "_set"이 들어가야한다.
@@ -8,7 +17,7 @@
 ![image](https://user-images.githubusercontent.com/89897944/174224236-c3662f08-8433-4364-8e17-51f59fe78450.png)
 **def haspermission 밑에 if 분기를 만들어서 서로 다른 권한을 줄 수 있다.
 
-# 6/13 네번째 과제 설명 - WIP
+# 6/13 네번째 과제 
 1. blog 앱에 <게시글, 작성자, 작성 시간, 내용>이 포함된 comment라는 테이블을 추가해주세요
     게시글과 작성자는 fk 필드로 생성해주셔야 해요
 <img width="704" alt="image" src="https://user-images.githubusercontent.com/89897944/173721755-ae5375eb-5730-43fd-abee-e9cf4f53576e.png">
