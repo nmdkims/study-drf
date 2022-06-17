@@ -6,9 +6,9 @@ from blog.serializers import commentSerializer
 
 
 class UserSerializer(serializers.ModelSerializer):
-    comment = commentSerializer()
+    comment_set = commentSerializer(many=True)
 
     class Meta:
         model = User
         # fields = "__all__"
-        fields = ['username', 'password', 'comment']
+        fields = ['username', 'password', 'comment_set']
