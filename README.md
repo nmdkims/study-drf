@@ -1,3 +1,13 @@
+# 역참조 에러 해결 - 6/13일 3번 문제 해결
+![image](https://user-images.githubusercontent.com/89897944/174224560-d941f9c3-115c-4250-97f3-df7177641194.png)
+** 역참조를 할때 변수 이름 밑에는 "_set"이 들어가야한다.
+그리고 () 안에 'many=True'를 설정하여 한명의 유저가 여러개의 comment를 가지고 있는 one to many 관계가 가능 하다는 것을 나타내 준다.
+
+
+# Method 별로 권한 설정 다르게 하기 ( 6/10일 13번 문제 )
+![image](https://user-images.githubusercontent.com/89897944/174224236-c3662f08-8433-4364-8e17-51f59fe78450.png)
+**def haspermission 밑에 if 분기를 만들어서 서로 다른 권한을 줄 수 있다.
+
 # 6/13 네번째 과제 설명 - WIP
 1. blog 앱에 <게시글, 작성자, 작성 시간, 내용>이 포함된 comment라는 테이블을 추가해주세요
     게시글과 작성자는 fk 필드로 생성해주셔야 해요
