@@ -118,7 +118,6 @@ USE_I10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
@@ -132,3 +131,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# python manage.py runserver를 하게 되면 http://127.0.0.1:8000/ 가 열리게 되는데 http://127.0.0.1:8000/media 라고 하는 곳을 BASE_DIR
+# 경로로 잡아준다는 뜻

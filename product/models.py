@@ -12,4 +12,4 @@ class Event(models.Model):
     is_active = models.BooleanField(default=False)
 
     def __str__(self):
-        return self.title
+        return f"{self.title} 이벤트 입니다."
